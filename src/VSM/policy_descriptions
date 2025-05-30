@@ -1,0 +1,31 @@
+Policy;Description
+A.RTL1;If the current altitude is less than RTL_ALT, then altitude must be increased until the altitude is greater or equal to the RTL_ALT.
+A.RTL2;If the current altitude is greater or equal to RTL_ALT, current flight mode is RTL, and the current vehicle is not at home position, then the vehicle must move to the home position while maintaining the current altitude.
+A.RTL3;If current altitude is greater than ground altitude and current position is the same as home position, then altitude must be decreased.
+A.RTL4;If current altitude is equal to ground altitude and current position is the same as home position, then the vehicle must disarm motors.                                      
+A.FLIP1;If and only if roll is less than 45 degree, throttle is greater or equal to 1,500, altitude is more than 10 meters, and the current flight mode is one of ACRO and ALT_HOLD, then the flight mode can be changed to FLIP 
+A.FLIP2;If the current flight mode is FLIP and roll is between -90 and 45 degree, then rolling right at 400 degree per second.
+A.FLIP3;After the vehicle finishes A.FLIP2, the vehicle must recover the original attitude (i.e., roll, pitch, and yaw) within k seconds
+A.FLIPGeneral;The vehicle should complete the rolling (A.FLIP2) within 2.5 seconds and must return to the original flight mode
+A.ALT_HOLD1;If the altitude source is the barometer, the vehicle must follow the altitude computed by this source, rather than the GPS.
+A.ALT_HOLD2;If the throttle stick is in the middle (i.e., 1,500) the vehicle must maintain the current altitude
+A.CIRCLE1;Pitch stick up must reduce the radius until it reaches zero. 
+A.CIRCLE2;Pitch stick down must increase the radius.
+A.CIRCLE3;Roll stick right (think clockwise) must increase the speed while moving clockwise.
+A.CIRCLE4;Roll stick right (think clockwise) must decrease the speed while moving counterclockwise
+A.CIRCLE5;Roll stick left (think counterclockwise) must increase the speed while moving counterclockwise. 
+A.CIRCLE6; Roll stick left (think counterclockwise) must decrease the speed while moving clockwise. 
+A.CIRCLE7;The users do not have any control over the roll, pitch, and yaw but can change the altitude with the throttle stick.
+A.LAND1;Above 10 meters the vehicle must descend at the rate specified in the LAND_SPEED_HIGH parameter 
+A.LAND2;Below 10 meters the vehicle must descend at the rate specified in the LAND_SPEED parameter
+A.AUTO1;The pilot’s roll, pitch and throttle inputs must be ignored but the yaw can be overridden with the yaw stick.
+A.BRAKE1;When the vehicle is in BRAKE mode, it must stop within k seconds 
+A.DRIFT1;If the vehicle loses GPS signals in flight while in DRIFT mode, the vehicle must either LAND or enter ALT_HOLD mode based on FS_EKF_ACTION parameter. 
+A.LOITER1;The vehicle must maintain a constant location, heading, and altitude
+A.GUIDED1;If there is no more way point, the vehicle must stay at the same location, heading, and altitude
+A.SPORT1;In SPORT mode, the vehicle must climb as indicated by the PILOT_SPEED_UP parameter
+A.RC.FS1;If and only if the vehicle is armed in ACRO mode and the throttle input is less than the minimum (FS_THR_VALUE parameter), the vehicle must immediately disarm
+A.RC.FS2;If the throttle input is less than FS_THR_VALUE parameter, it must change the current mode to the RC fail-safe mode
+A.CHUTE1;Deploying a parachute requires following conditions: (1) the motors must be armed, (2) the vehicle must not be in the FLIP or ACRO flight modes, (3) the barometer must show that the vehicle is not climbing, and (4) the vehicle’s current altitude must be above the CHUTE_ALT_MIN parameter value.
+A.GPS.FS1;When the number of detected GPS satellites is less than four, the vehicle must trigger the GPS fail-safe mode
+A.GPS.FS2;When the GPS fail-safe mode is triggered and there is a secondary altitude sensor, the vehicle must change the current primary altitude source to the secondary sensor.

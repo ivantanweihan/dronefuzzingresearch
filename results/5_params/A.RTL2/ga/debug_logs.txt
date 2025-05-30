@@ -1,0 +1,809 @@
+
+03:51:01.167 : ============================================================
+
+03:51:01.168 : {'constant_params': {},
+ 'hang_thres': 420,
+ 'log_cols': ['MODE',
+              'lat',
+              'lon',
+              'relative_alt',
+              'roll',
+              'pitch',
+              'yaw',
+              'rollspeed',
+              'pitchspeed',
+              'yawspeed',
+              'xacc',
+              'yacc',
+              'zacc',
+              'xgyro',
+              'ygyro',
+              'zgyro',
+              'vx',
+              'vy',
+              'vz'],
+ 'modes_vec': ['STABILIZE', 'AUTO', 'RTL'],
+ 'params_to_fetch': ['RTL_ALT'],
+ 'params_to_fuzz': ['WPNAV_SPEED',
+                    'WPNAV_RADIUS',
+                    'WPNAV_SPEED_UP',
+                    'WPNAV_SPEED_DN',
+                    'WPNAV_ACCEL',
+                    'WPNAV_ACCEL_Z',
+                    'WPNAV_JERK',
+                    'ANGLE_MAX'],
+ 'polygon_corners': [(-35.36390088461317, 149.1644181341574),
+                     (-35.362360972318854, 149.16443089296527),
+                     (-35.362236113277945, 149.16625540249393),
+                     (-35.3640933715847, 149.16588539706504)],
+ 'state_cols': ['vx', 'vy', 'vz', 'relative_alt', 'RTL_ALT'],
+ 'waypoints': 3,
+ 'wp_altitude': [20, 25]}
+03:51:01.168 : Fuzzing scenario : A.RTL2
+03:51:01.366 : Choosen configs: RTL_ALT, ARMING_ACCTHRESH, ZIGZ_SIDE_DIST, CAM_SERVO_ON, FENCE_RADIUS
+03:51:01.458 : ------------------------------------------------------------
+03:51:01.458 : Loop #1
+03:51:01.458 : # Threads : 1
+03:51:01.458 : Threads : MainThread
+03:51:01.459 : Starting QGCS
+03:51:01.462 : Starting Gazebo
+03:51:01.465 : Starting ArduPilot
+03:51:08.483 : Creating Simulation Instance
+03:51:49.003 : Ready to Fly: IMU using GPS
+03:51:49.003 : Start State Logging
+03:51:49.011 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.86368153498704
+03:51:49.018 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.527395209511287
+03:51:49.026 : Sending waypoint: 2 | lat : -35.36242662420438 | lon : 149.16578989811597 | alt : 20.013445139024746
+03:52:04.052 : Finished uploading missions
+03:52:04.052 : Starting Mission
+03:52:04.103 : Start Param Fuzzing
+03:52:51.345 : Reached command #2
+03:52:51.345 : End of mission simulations
+03:52:52.168 : Setting mode to RTL
+03:52:52.179 : Current RTL_ALT : 21984.0
+03:59:40.758 : Disarming motors
+03:59:45.943 : Disarm wait over
+03:59:45.975 : Ending Simulation Finally
+03:59:46.167 : Simulation Time Taken: 0:08:44.699000
+03:59:46.167 : Killing ArduPilot, Gazebo and QGCS
+03:59:46.324 : Merging 20 log types
+03:59:46.783 : Writing 297 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688845868_4877493/
+03:59:48.384 : Reseting Handler
+03:59:48.384 : ------------------------------------------------------------
+03:59:48.384 : Loop #2
+03:59:48.385 : # Threads : 1
+03:59:48.385 : Threads : MainThread
+03:59:48.385 : Starting QGCS
+03:59:48.390 : Starting Gazebo
+03:59:48.396 : Starting ArduPilot
+03:59:55.417 : Creating Simulation Instance
+04:00:35.862 : Ready to Fly: IMU using GPS
+04:00:35.862 : Start State Logging
+04:00:35.870 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.16416057599455
+04:00:35.877 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.155157859352755
+04:00:37.897 : Sending waypoint: 2 | lat : -35.36387181535612 | lon : 149.16582807349874 | alt : 20.273091111215653
+04:00:52.970 : Finished uploading missions
+04:00:52.972 : Starting Mission
+04:00:53.001 : Start Param Fuzzing
+04:01:36.147 : Reached command #2
+04:01:36.147 : End of mission simulations
+04:01:37.065 : Setting mode to RTL
+04:01:37.092 : Current RTL_ALT : 33238.0
+04:08:38.147 : Hang Threshold Exceeded
+04:08:40.351 : Simulation Time Taken: 0:08:51.949000
+04:08:40.351 : Killing ArduPilot, Gazebo and QGCS
+04:08:40.502 : Merging 20 log types
+04:08:40.957 : Writing 299 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688846395_4229436/
+04:08:41.009 : Ending Test RTL Procedure
+04:08:41.041 : Ending Simulation Finally
+04:08:42.403 : Reseting Handler
+04:08:42.403 : ------------------------------------------------------------
+04:08:42.403 : Loop #3
+04:08:42.403 : # Threads : 2
+04:08:42.403 : Threads : MainThread, sim_ins-2
+04:08:42.403 : Waiting for sim_ins-2 to terminate.
+04:08:43.048 : # Threads : 1
+04:08:43.049 : Threads : MainThread
+04:08:43.049 : Starting QGCS
+04:08:43.054 : Starting Gazebo
+04:08:43.060 : Starting ArduPilot
+04:08:50.089 : Creating Simulation Instance
+04:09:30.767 : Ready to Fly: IMU using GPS
+04:09:30.767 : Start State Logging
+04:09:30.776 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.39007006773015
+04:09:30.784 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.595765955739502
+04:09:30.792 : Sending waypoint: 2 | lat : -35.3633914834888 | lon : 149.16567034574427 | alt : 22.126322513567114
+04:09:45.830 : Finished uploading missions
+04:09:45.831 : Starting Mission
+04:09:45.902 : Start Param Fuzzing
+04:10:23.725 : Reached command #2
+04:10:23.725 : End of mission simulations
+04:10:23.915 : Setting mode to RTL
+04:10:23.916 : Current RTL_ALT : 78236.0
+04:14:39.807 : Disarming motors
+04:14:45.513 : Disarm wait over
+04:14:45.549 : Ending Simulation Finally
+04:14:45.674 : Simulation Time Taken: 0:06:02.607000
+04:14:45.674 : Killing ArduPilot, Gazebo and QGCS
+04:14:45.825 : Merging 20 log types
+04:14:46.014 : Writing 192 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688846930_0986035/
+04:14:47.022 : Reseting Handler
+04:14:47.022 : ------------------------------------------------------------
+04:14:47.022 : Loop #4
+04:14:47.022 : # Threads : 2
+04:14:47.022 : Threads : MainThread, sim_ins-3
+04:14:47.022 : Waiting for sim_ins-3 to terminate.
+04:14:47.552 : # Threads : 1
+04:14:47.552 : Threads : MainThread
+04:14:47.552 : Starting QGCS
+04:14:47.558 : Starting Gazebo
+04:14:47.570 : Starting ArduPilot
+04:14:54.602 : Creating Simulation Instance
+04:15:35.249 : Ready to Fly: IMU using GPS
+04:15:35.249 : Start State Logging
+04:15:38.259 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 23.26732462585335
+04:15:38.266 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 23.703175458987204
+04:15:39.281 : Sending waypoint: 2 | lat : -35.3624403507478 | lon : 149.16538925254588 | alt : 21.691169374208762
+04:15:54.368 : Finished uploading missions
+04:15:54.368 : Starting Mission
+04:15:54.434 : Start Param Fuzzing
+04:16:40.539 : Reached command #2
+04:16:40.573 : End of mission simulations
+04:16:41.449 : Setting mode to RTL
+04:16:41.449 : Current RTL_ALT : 93852.0
+04:23:42.453 : Hang Threshold Exceeded
+04:23:44.666 : Simulation Time Taken: 0:08:57.079000
+04:23:44.666 : Killing ArduPilot, Gazebo and QGCS
+04:23:44.812 : Merging 20 log types
+04:23:45.238 : Writing 293 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688847294_6111815/
+04:23:45.304 : Ending Test RTL Procedure
+04:23:45.335 : Ending Simulation Finally
+04:23:46.673 : Reseting Handler
+04:23:46.673 : ------------------------------------------------------------
+04:23:46.673 : Loop #5
+04:23:46.673 : # Threads : 2
+04:23:46.673 : Threads : MainThread, sim_ins-4
+04:23:46.673 : Waiting for sim_ins-4 to terminate.
+04:23:47.363 : # Threads : 1
+04:23:47.363 : Threads : MainThread
+04:23:47.363 : Starting QGCS
+04:23:47.369 : Starting Gazebo
+04:23:47.374 : Starting ArduPilot
+04:23:54.393 : Creating Simulation Instance
+04:24:35.064 : Ready to Fly: IMU using GPS
+04:24:35.064 : Start State Logging
+04:24:35.072 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.125452113632715
+04:24:36.084 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.355673819842636
+04:24:36.092 : Sending waypoint: 2 | lat : -35.36352983987116 | lon : 149.16543188973802 | alt : 21.49442321604426
+04:24:51.153 : Finished uploading missions
+04:24:51.156 : Starting Mission
+04:24:51.218 : Start Param Fuzzing
+04:25:27.406 : Reached command #2
+04:25:27.406 : End of mission simulations
+04:25:28.238 : Setting mode to RTL
+04:25:28.239 : Current RTL_ALT : 21988.0
+04:29:01.573 : Disarming motors
+04:29:06.703 : Disarm wait over
+04:29:06.709 : Ending Simulation Finally
+04:29:06.862 : Simulation Time Taken: 0:05:19.483000
+04:29:06.862 : Killing ArduPilot, Gazebo and QGCS
+04:29:07.024 : Merging 20 log types
+04:29:07.172 : Writing 164 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688847834_4029448/
+04:29:08.144 : Reseting Handler
+04:29:08.144 : ------------------------------------------------------------
+04:29:08.144 : Loop #6
+04:29:08.144 : # Threads : 2
+04:29:08.144 : Threads : MainThread, sim_ins-5
+04:29:08.144 : Waiting for sim_ins-5 to terminate.
+04:29:08.711 : # Threads : 1
+04:29:08.711 : Threads : MainThread
+04:29:08.711 : Starting QGCS
+04:29:08.718 : Starting Gazebo
+04:29:08.726 : Starting ArduPilot
+04:29:15.756 : Creating Simulation Instance
+04:29:56.163 : Ready to Fly: IMU using GPS
+04:29:56.163 : Start State Logging
+04:29:57.170 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.440447934487207
+04:29:58.182 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.00879057676073
+04:29:58.189 : Sending waypoint: 2 | lat : -35.36286709423306 | lon : 149.16453339164948 | alt : 22.118910867906106
+04:30:13.245 : Finished uploading missions
+04:30:13.246 : Starting Mission
+04:30:13.419 : Start Param Fuzzing
+04:30:55.535 : Reached command #2
+04:30:55.535 : End of mission simulations
+04:30:56.334 : Setting mode to RTL
+04:30:56.335 : Current RTL_ALT : 41249.0
+04:37:57.421 : Hang Threshold Exceeded
+04:37:59.625 : Simulation Time Taken: 0:08:50.887000
+04:37:59.625 : Killing ArduPilot, Gazebo and QGCS
+04:37:59.783 : Merging 20 log types
+04:38:00.199 : Ending Test RTL Procedure
+04:38:00.216 : Ending Simulation Finally
+04:38:00.245 : Writing 291 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688848155_7651696/
+04:38:01.669 : Reseting Handler
+04:38:01.669 : ------------------------------------------------------------
+04:38:01.669 : Loop #7
+04:38:01.669 : # Threads : 2
+04:38:01.669 : Threads : MainThread, sim_ins-6
+04:38:01.669 : Waiting for sim_ins-6 to terminate.
+04:38:02.218 : # Threads : 1
+04:38:02.218 : Threads : MainThread
+04:38:02.218 : Starting QGCS
+04:38:02.225 : Starting Gazebo
+04:38:02.230 : Starting ArduPilot
+04:38:09.249 : Creating Simulation Instance
+04:38:49.764 : Ready to Fly: IMU using GPS
+04:38:49.764 : Start State Logging
+04:38:50.778 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.37981580294468
+04:38:50.786 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.720337340609163
+04:38:52.801 : Sending waypoint: 2 | lat : -35.363181106466975 | lon : 149.16600392627046 | alt : 22.83141018194256
+04:39:07.879 : Finished uploading missions
+04:39:07.879 : Starting Mission
+04:39:07.902 : Start Param Fuzzing
+04:39:49.511 : Reached command #2
+04:39:49.511 : End of mission simulations
+04:39:49.974 : Setting mode to RTL
+04:39:49.974 : Current RTL_ALT : 56191.0
+04:46:21.542 : Disarming motors
+04:46:26.796 : Disarm wait over
+04:46:26.817 : Ending Simulation Finally
+04:46:27.002 : Simulation Time Taken: 0:08:24.767000
+04:46:27.002 : Killing ArduPilot, Gazebo and QGCS
+04:46:27.172 : Merging 20 log types
+04:46:27.571 : Writing 276 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688848689_2537081/
+04:46:28.927 : Reseting Handler
+04:46:28.927 : ------------------------------------------------------------
+04:46:28.927 : Loop #8
+04:46:28.927 : # Threads : 1
+04:46:28.927 : Threads : MainThread
+04:46:28.927 : Starting QGCS
+04:46:28.933 : Starting Gazebo
+04:46:28.940 : Starting ArduPilot
+04:46:35.959 : Creating Simulation Instance
+04:47:16.348 : Ready to Fly: IMU using GPS
+04:47:16.348 : Start State Logging
+04:47:18.361 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 23.9847601153161
+04:47:18.369 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.89155937418773
+04:47:18.376 : Sending waypoint: 2 | lat : -35.363452974392146 | lon : 149.16500510316285 | alt : 24.878826661002325
+04:47:33.439 : Finished uploading missions
+04:47:33.441 : Starting Mission
+04:47:33.581 : Start Param Fuzzing
+04:48:10.701 : Reached command #2
+04:48:10.701 : End of mission simulations
+04:48:11.514 : Setting mode to RTL
+04:48:11.514 : Current RTL_ALT : 171750.0
+04:51:17.856 : Disarming motors
+04:51:22.954 : Disarm wait over
+04:51:22.956 : Ending Simulation Finally
+04:51:23.037 : Simulation Time Taken: 0:04:54.092000
+04:51:23.037 : Killing ArduPilot, Gazebo and QGCS
+04:51:23.202 : Merging 20 log types
+04:51:23.322 : Writing 145 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688849195_9753575/
+04:51:24.172 : Reseting Handler
+04:51:24.172 : ------------------------------------------------------------
+04:51:24.172 : Loop #9
+04:51:24.172 : # Threads : 2
+04:51:24.172 : Threads : MainThread, sim_ins-8
+04:51:24.172 : Waiting for sim_ins-8 to terminate.
+04:51:24.959 : # Threads : 1
+04:51:24.960 : Threads : MainThread
+04:51:24.960 : Starting QGCS
+04:51:24.966 : Starting Gazebo
+04:51:24.973 : Starting ArduPilot
+04:51:31.993 : Creating Simulation Instance
+04:52:12.384 : Ready to Fly: IMU using GPS
+04:52:12.384 : Start State Logging
+04:52:12.400 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.499725581530658
+04:52:14.417 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.588791117204078
+04:52:14.424 : Sending waypoint: 2 | lat : -35.363785717091744 | lon : 149.16480833365364 | alt : 24.176715650966702
+04:52:29.460 : Finished uploading missions
+04:52:29.460 : Starting Mission
+04:52:29.599 : Start Param Fuzzing
+04:53:12.227 : Reached command #2
+04:53:12.227 : End of mission simulations
+04:53:12.539 : Setting mode to RTL
+04:53:12.539 : Current RTL_ALT : 44414.0
+04:59:38.445 : Disarming motors
+04:59:44.343 : Disarm wait over
+04:59:44.369 : Ending Simulation Finally
+04:59:44.371 : Simulation Time Taken: 0:08:19.392000
+04:59:44.371 : Killing ArduPilot, Gazebo and QGCS
+04:59:44.544 : Merging 20 log types
+04:59:44.926 : Writing 274 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688849491_9997628/
+04:59:46.220 : Reseting Handler
+04:59:46.220 : ------------------------------------------------------------
+04:59:46.220 : Loop #10
+04:59:46.220 : # Threads : 2
+04:59:46.220 : Threads : MainThread, sim_ins-9
+04:59:46.221 : Waiting for sim_ins-9 to terminate.
+04:59:46.372 : # Threads : 1
+04:59:46.372 : Threads : MainThread
+04:59:46.372 : Starting QGCS
+04:59:46.379 : Starting Gazebo
+04:59:46.386 : Starting ArduPilot
+04:59:53.413 : Creating Simulation Instance
+05:00:33.581 : Ready to Fly: IMU using GPS
+05:00:33.581 : Start State Logging
+05:00:33.594 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.83761611743637
+05:00:33.601 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 23.65420438498423
+05:00:34.614 : Sending waypoint: 2 | lat : -35.36378449348269 | lon : 149.16516219812783 | alt : 22.24422032617645
+05:00:49.630 : Finished uploading missions
+05:00:49.631 : Starting Mission
+05:00:49.655 : Start Param Fuzzing
+05:01:31.683 : Reached command #2
+05:01:31.683 : End of mission simulations
+05:01:31.708 : Setting mode to RTL
+05:01:31.708 : Current RTL_ALT : 48596.0
+05:07:08.246 : Disarming motors
+05:07:13.391 : Disarm wait over
+05:07:13.391 : Ending Simulation Finally
+05:07:13.591 : Simulation Time Taken: 0:07:27.195000
+05:07:13.591 : Killing ArduPilot, Gazebo and QGCS
+05:07:13.743 : Merging 20 log types
+05:07:14.060 : Writing 240 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688849993_4140651/
+05:07:15.366 : Reseting Handler
+05:07:15.366 : ------------------------------------------------------------
+05:07:15.366 : Loop #11
+05:07:15.366 : # Threads : 2
+05:07:15.366 : Threads : MainThread, sim_ins-10
+05:07:15.366 : Waiting for sim_ins-10 to terminate.
+05:07:15.391 : # Threads : 1
+05:07:15.392 : Threads : MainThread
+05:07:15.392 : Starting QGCS
+05:07:15.401 : Starting Gazebo
+05:07:15.412 : Starting ArduPilot
+05:07:22.443 : Creating Simulation Instance
+05:08:02.830 : Ready to Fly: IMU using GPS
+05:08:02.830 : Start State Logging
+05:08:03.846 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.103619106092143
+05:08:03.852 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.529134426249097
+05:08:03.860 : Sending waypoint: 2 | lat : -35.36290252361178 | lon : 149.16475046421698 | alt : 20.77643214134915
+05:08:18.940 : Finished uploading missions
+05:08:18.955 : Starting Mission
+05:08:19.065 : Start Param Fuzzing
+05:09:00.413 : Reached command #2
+05:09:00.413 : End of mission simulations
+05:09:01.035 : Setting mode to RTL
+05:09:01.035 : Current RTL_ALT : 20405.0
+05:14:40.756 : Disarming motors
+05:14:46.745 : Disarm wait over
+05:14:46.762 : Ending Simulation Finally
+05:14:46.950 : Simulation Time Taken: 0:07:31.523000
+05:14:46.951 : Killing ArduPilot, Gazebo and QGCS
+05:14:47.121 : Merging 20 log types
+05:14:47.449 : Writing 245 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688850442_448111/
+05:14:48.705 : Reseting Handler
+05:14:48.706 : ------------------------------------------------------------
+05:14:48.706 : Loop #12
+05:14:48.706 : # Threads : 2
+05:14:48.706 : Threads : MainThread, sim_ins-11
+05:14:48.706 : Waiting for sim_ins-11 to terminate.
+05:14:48.764 : # Threads : 1
+05:14:48.764 : Threads : MainThread
+05:14:48.764 : Starting QGCS
+05:14:48.771 : Starting Gazebo
+05:14:48.778 : Starting ArduPilot
+05:14:55.806 : Creating Simulation Instance
+05:15:36.386 : Ready to Fly: IMU using GPS
+05:15:36.386 : Start State Logging
+05:15:37.401 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.985129838603033
+05:15:38.414 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.02932493999423
+05:15:39.422 : Sending waypoint: 2 | lat : -35.36302420149622 | lon : 149.1658658011521 | alt : 23.081107992319705
+05:15:54.477 : Finished uploading missions
+05:15:54.487 : Starting Mission
+05:15:54.645 : Start Param Fuzzing
+05:16:34.852 : Reached command #2
+05:16:34.852 : End of mission simulations
+05:16:35.580 : Setting mode to RTL
+05:16:35.581 : Current RTL_ALT : 45824.0
+05:22:28.238 : Disarming motors
+05:22:33.326 : Disarm wait over
+05:22:33.331 : Ending Simulation Finally
+05:22:33.532 : Simulation Time Taken: 0:07:44.743000
+05:22:33.532 : Killing ArduPilot, Gazebo and QGCS
+05:22:33.710 : Merging 20 log types
+05:22:34.033 : Writing 250 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688850895_8185604/
+05:22:35.297 : Reseting Handler
+05:22:35.297 : ------------------------------------------------------------
+05:22:35.297 : Loop #13
+05:22:35.297 : # Threads : 2
+05:22:35.297 : Threads : MainThread, sim_ins-12
+05:22:35.297 : Waiting for sim_ins-12 to terminate.
+05:22:35.334 : # Threads : 1
+05:22:35.334 : Threads : MainThread
+05:22:35.334 : Starting QGCS
+05:22:35.342 : Starting Gazebo
+05:22:35.350 : Starting ArduPilot
+05:22:42.373 : Creating Simulation Instance
+05:23:22.955 : Ready to Fly: IMU using GPS
+05:23:22.955 : Start State Logging
+05:23:27.986 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.49824543761422
+05:23:31.009 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.720201742303693
+05:23:33.025 : Sending waypoint: 2 | lat : -35.36341310652246 | lon : 149.1646650636881 | alt : 21.54952676543425
+05:23:48.276 : Finished uploading missions
+05:23:48.278 : Starting Mission
+05:23:48.438 : Start Param Fuzzing
+05:24:29.379 : Reached command #2
+05:24:29.379 : End of mission simulations
+05:24:30.371 : Setting mode to RTL
+05:24:30.371 : Current RTL_ALT : 4901.0
+05:26:38.352 : Disarming motors
+05:26:43.656 : Disarm wait over
+05:26:43.688 : Ending Simulation Finally
+05:26:43.712 : Simulation Time Taken: 0:04:08.353000
+05:26:43.713 : Killing ArduPilot, Gazebo and QGCS
+05:26:43.875 : Merging 20 log types
+05:26:43.946 : Writing 110 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688851362_3801038/
+05:26:44.658 : Reseting Handler
+05:26:44.658 : ------------------------------------------------------------
+05:26:44.658 : Loop #14
+05:26:44.659 : # Threads : 2
+05:26:44.659 : Threads : MainThread, sim_ins-13
+05:26:44.659 : Waiting for sim_ins-13 to terminate.
+05:26:45.690 : # Threads : 1
+05:26:45.690 : Threads : MainThread
+05:26:45.690 : Starting QGCS
+05:26:45.698 : Starting Gazebo
+05:26:45.705 : Starting ArduPilot
+05:26:52.738 : Creating Simulation Instance
+05:27:33.141 : Ready to Fly: IMU using GPS
+05:27:33.141 : Start State Logging
+05:27:33.149 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.704390884437142
+05:27:35.168 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.892804309965655
+05:27:38.188 : Sending waypoint: 2 | lat : -35.362679310066326 | lon : 149.16602315081923 | alt : 20.90355320518909
+05:27:53.229 : Finished uploading missions
+05:27:53.229 : Starting Mission
+05:27:53.377 : Start Param Fuzzing
+05:28:40.788 : Reached command #2
+05:28:40.788 : End of mission simulations
+05:28:41.331 : Setting mode to RTL
+05:28:41.331 : Current RTL_ALT : 268902.0
+05:35:42.439 : Hang Threshold Exceeded
+05:35:44.653 : Simulation Time Taken: 0:08:58.932000
+05:35:44.654 : Killing ArduPilot, Gazebo and QGCS
+05:35:44.842 : Merging 20 log types
+05:35:45.180 : Ending Test RTL Procedure
+05:35:45.210 : Ending Simulation Finally
+05:35:45.300 : Writing 296 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688851612_7481267/
+05:35:46.791 : Reseting Handler
+05:35:46.792 : ------------------------------------------------------------
+05:35:46.792 : Loop #15
+05:35:46.792 : # Threads : 2
+05:35:46.792 : Threads : MainThread, sim_ins-14
+05:35:46.792 : Waiting for sim_ins-14 to terminate.
+05:35:47.215 : # Threads : 1
+05:35:47.215 : Threads : MainThread
+05:35:47.215 : Starting QGCS
+05:35:47.224 : Starting Gazebo
+05:35:47.231 : Starting ArduPilot
+05:35:54.254 : Creating Simulation Instance
+05:36:34.940 : Ready to Fly: IMU using GPS
+05:36:34.940 : Start State Logging
+05:36:35.952 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.003093576688897
+05:36:38.978 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.05421254407727
+05:36:38.986 : Sending waypoint: 2 | lat : -35.362962764529335 | lon : 149.16521836134848 | alt : 21.414023707243533
+05:36:54.065 : Finished uploading missions
+05:36:54.068 : Starting Mission
+05:36:54.095 : Start Param Fuzzing
+05:37:29.916 : Reached command #2
+05:37:29.916 : End of mission simulations
+05:37:30.163 : Setting mode to RTL
+05:37:30.164 : Current RTL_ALT : 24151.0
+05:40:58.214 : Disarming motors
+05:41:03.564 : Disarm wait over
+05:41:03.575 : Ending Simulation Finally
+05:41:03.776 : Simulation Time Taken: 0:05:16.537000
+05:41:03.776 : Killing ArduPilot, Gazebo and QGCS
+05:41:03.956 : Merging 20 log types
+05:41:04.088 : Writing 153 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688852154_2584267/
+05:41:05.013 : Reseting Handler
+05:41:05.013 : ------------------------------------------------------------
+05:41:05.013 : Loop #16
+05:41:05.013 : # Threads : 2
+05:41:05.013 : Threads : MainThread, sim_ins-15
+05:41:05.013 : Waiting for sim_ins-15 to terminate.
+05:41:05.578 : # Threads : 1
+05:41:05.578 : Threads : MainThread
+05:41:05.578 : Starting QGCS
+05:41:05.585 : Starting Gazebo
+05:41:05.591 : Starting ArduPilot
+05:41:12.610 : Creating Simulation Instance
+05:41:52.988 : Ready to Fly: IMU using GPS
+05:41:52.988 : Start State Logging
+05:41:52.995 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.909165735569204
+05:41:53.003 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.405565689755637
+05:41:54.018 : Sending waypoint: 2 | lat : -35.3635771227355 | lon : 149.16532691239277 | alt : 20.81842335377935
+05:42:09.068 : Finished uploading missions
+05:42:09.076 : Starting Mission
+05:42:09.202 : Start Param Fuzzing
+05:42:46.490 : Reached command #2
+05:42:46.490 : End of mission simulations
+05:42:47.166 : Setting mode to RTL
+05:42:47.166 : Current RTL_ALT : 12307.0
+05:46:31.808 : Disarming motors
+05:46:37.652 : Disarm wait over
+05:46:37.678 : Ending Simulation Finally
+05:46:37.825 : Simulation Time Taken: 0:05:32.229000
+05:46:37.825 : Killing ArduPilot, Gazebo and QGCS
+05:46:38.006 : Merging 20 log types
+05:46:38.171 : Writing 169 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688852472_618757/
+05:46:39.131 : Reseting Handler
+05:46:39.131 : ------------------------------------------------------------
+05:46:39.131 : Loop #17
+05:46:39.131 : # Threads : 2
+05:46:39.131 : Threads : MainThread, sim_ins-16
+05:46:39.132 : Waiting for sim_ins-16 to terminate.
+05:46:39.680 : # Threads : 1
+05:46:39.680 : Threads : MainThread
+05:46:39.680 : Starting QGCS
+05:46:39.688 : Starting Gazebo
+05:46:39.697 : Starting ArduPilot
+05:46:46.726 : Creating Simulation Instance
+05:47:27.090 : Ready to Fly: IMU using GPS
+05:47:27.090 : Start State Logging
+05:47:28.103 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 21.595328777185994
+05:47:28.110 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.251901911360036
+05:47:28.118 : Sending waypoint: 2 | lat : -35.36282938153188 | lon : 149.16538096635617 | alt : 22.634934062279076
+05:47:43.145 : Finished uploading missions
+05:47:43.150 : Starting Mission
+05:47:43.355 : Start Param Fuzzing
+05:48:23.868 : Reached command #2
+05:48:23.868 : End of mission simulations
+05:48:24.227 : Setting mode to RTL
+05:48:24.227 : Current RTL_ALT : 19764.0
+05:53:08.262 : Disarming motors
+05:53:13.792 : Disarm wait over
+05:53:13.819 : Ending Simulation Finally
+05:53:13.933 : Simulation Time Taken: 0:06:34.225000
+05:53:13.933 : Killing ArduPilot, Gazebo and QGCS
+05:53:14.102 : Merging 20 log types
+05:53:14.329 : Writing 209 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688852806_7356703/
+05:53:15.397 : Reseting Handler
+05:53:15.397 : ------------------------------------------------------------
+05:53:15.397 : Loop #18
+05:53:15.397 : # Threads : 2
+05:53:15.397 : Threads : MainThread, sim_ins-17
+05:53:15.397 : Waiting for sim_ins-17 to terminate.
+05:53:15.822 : # Threads : 1
+05:53:15.822 : Threads : MainThread
+05:53:15.822 : Starting QGCS
+05:53:15.831 : Starting Gazebo
+05:53:15.841 : Starting ArduPilot
+05:53:22.863 : Creating Simulation Instance
+05:54:03.277 : Ready to Fly: IMU using GPS
+05:54:03.277 : Start State Logging
+05:54:03.284 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.457368559821667
+05:54:04.295 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.24250075323063
+05:54:04.302 : Sending waypoint: 2 | lat : -35.36270325759219 | lon : 149.16549700298287 | alt : 20.773281058446145
+05:54:19.382 : Finished uploading missions
+05:54:19.391 : Starting Mission
+05:54:19.494 : Start Param Fuzzing
+05:54:59.533 : Reached command #2
+05:54:59.533 : End of mission simulations
+05:55:00.470 : Setting mode to RTL
+05:55:00.499 : Current RTL_ALT : 87394.0
+06:01:16.107 : Disarming motors
+06:01:21.326 : Disarm wait over
+06:01:21.348 : Ending Simulation Finally
+06:01:21.380 : Simulation Time Taken: 0:08:05.531000
+06:01:21.380 : Killing ArduPilot, Gazebo and QGCS
+06:01:21.575 : Merging 20 log types
+06:01:21.955 : Writing 269 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688853202_875213/
+06:01:23.263 : Reseting Handler
+06:01:23.264 : ------------------------------------------------------------
+06:01:23.264 : Loop #19
+06:01:23.264 : # Threads : 2
+06:01:23.264 : Threads : MainThread, sim_ins-18
+06:01:23.264 : Waiting for sim_ins-18 to terminate.
+06:01:23.350 : # Threads : 1
+06:01:23.351 : Threads : MainThread
+06:01:23.351 : Starting QGCS
+06:01:23.361 : Starting Gazebo
+06:01:23.370 : Starting ArduPilot
+06:01:30.397 : Creating Simulation Instance
+06:02:10.804 : Ready to Fly: IMU using GPS
+06:02:10.804 : Start State Logging
+06:02:11.819 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.511469981516118
+06:02:11.827 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.77242908253946
+06:02:12.837 : Sending waypoint: 2 | lat : -35.36283308237274 | lon : 149.16539014733004 | alt : 20.952697258738773
+06:02:27.857 : Finished uploading missions
+06:02:27.860 : Starting Mission
+06:02:28.041 : Start Param Fuzzing
+06:03:08.950 : Reached command #2
+06:03:08.950 : End of mission simulations
+06:03:08.957 : Setting mode to RTL
+06:03:08.957 : Current RTL_ALT : 109363.0
+06:07:57.098 : Disarming motors
+06:08:02.569 : Disarm wait over
+06:08:02.590 : Ending Simulation Finally
+06:08:02.627 : Simulation Time Taken: 0:06:39.246000
+06:08:02.628 : Killing ArduPilot, Gazebo and QGCS
+06:08:02.820 : Merging 20 log types
+06:08:03.055 : Writing 213 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688853690_4109545/
+06:08:04.178 : Reseting Handler
+06:08:04.179 : ------------------------------------------------------------
+06:08:04.179 : Loop #20
+06:08:04.179 : # Threads : 2
+06:08:04.179 : Threads : MainThread, sim_ins-19
+06:08:04.179 : Waiting for sim_ins-19 to terminate.
+06:08:04.593 : # Threads : 1
+06:08:04.593 : Threads : MainThread
+06:08:04.593 : Starting QGCS
+06:08:04.600 : Starting Gazebo
+06:08:04.607 : Starting ArduPilot
+06:08:11.629 : Creating Simulation Instance
+06:08:52.085 : Ready to Fly: IMU using GPS
+06:08:52.085 : Start State Logging
+06:08:54.097 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 23.162193710792973
+06:08:55.107 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.314835926115236
+06:08:59.133 : Sending waypoint: 2 | lat : -35.36342968070156 | lon : 149.1656197934798 | alt : 20.523605551828865
+06:09:14.216 : Finished uploading missions
+06:09:14.216 : Starting Mission
+06:09:14.294 : Start Param Fuzzing
+06:09:52.350 : Reached command #2
+06:09:52.351 : End of mission simulations
+06:09:53.297 : Setting mode to RTL
+06:09:53.298 : Current RTL_ALT : 14104.0
+06:13:53.574 : Disarming motors
+06:13:58.780 : Disarm wait over
+06:13:58.803 : Ending Simulation Finally
+06:13:58.940 : Simulation Time Taken: 0:05:54.325000
+06:13:58.940 : Killing ArduPilot, Gazebo and QGCS
+06:13:59.127 : Merging 20 log types
+06:13:59.301 : Writing 179 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688854091_6331706/
+06:14:00.277 : Reseting Handler
+06:14:00.278 : ------------------------------------------------------------
+06:14:00.278 : Loop #21
+06:14:00.278 : # Threads : 2
+06:14:00.278 : Threads : MainThread, sim_ins-20
+06:14:00.278 : Waiting for sim_ins-20 to terminate.
+06:14:00.806 : # Threads : 1
+06:14:00.806 : Threads : MainThread
+06:14:00.806 : Starting QGCS
+06:14:00.815 : Starting Gazebo
+06:14:00.823 : Starting ArduPilot
+06:14:07.847 : Creating Simulation Instance
+06:14:48.201 : Ready to Fly: IMU using GPS
+06:14:48.201 : Start State Logging
+06:14:48.210 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.579165415436584
+06:14:50.222 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.93849731266821
+06:14:50.229 : Sending waypoint: 2 | lat : -35.36373266623699 | lon : 149.16530104679015 | alt : 22.864843643582173
+06:15:05.282 : Finished uploading missions
+06:15:05.284 : Starting Mission
+06:15:05.467 : Start Param Fuzzing
+06:15:47.292 : Reached command #2
+06:15:47.292 : End of mission simulations
+06:15:47.366 : Setting mode to RTL
+06:15:47.366 : Current RTL_ALT : 39226.0
+06:20:50.289 : Disarming motors
+06:20:55.943 : Disarm wait over
+06:20:55.960 : Ending Simulation Finally
+06:20:55.988 : Simulation Time Taken: 0:06:55.156000
+06:20:55.988 : Killing ArduPilot, Gazebo and QGCS
+06:20:56.186 : Merging 20 log types
+06:20:56.450 : Writing 222 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688854447_848323/
+06:20:57.612 : Reseting Handler
+06:20:57.613 : ------------------------------------------------------------
+06:20:57.613 : Loop #22
+06:20:57.613 : # Threads : 2
+06:20:57.613 : Threads : MainThread, sim_ins-21
+06:20:57.613 : Waiting for sim_ins-21 to terminate.
+06:20:57.962 : # Threads : 1
+06:20:57.962 : Threads : MainThread
+06:20:57.962 : Starting QGCS
+06:20:57.971 : Starting Gazebo
+06:20:57.980 : Starting ArduPilot
+06:21:05.006 : Creating Simulation Instance
+06:21:45.440 : Ready to Fly: IMU using GPS
+06:21:45.440 : Start State Logging
+06:21:46.448 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.62904654266893
+06:21:46.456 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.789790481666792
+06:21:48.470 : Sending waypoint: 2 | lat : -35.36238336443606 | lon : 149.16612670300088 | alt : 20.690004041556527
+06:22:03.557 : Finished uploading missions
+06:22:03.557 : Starting Mission
+06:22:03.642 : Start Param Fuzzing
+06:22:54.126 : Reached command #2
+06:22:54.126 : End of mission simulations
+06:22:54.664 : Setting mode to RTL
+06:22:54.664 : Current RTL_ALT : 6067.0
+06:25:30.968 : Disarming motors
+06:25:36.024 : Disarm wait over
+06:25:36.059 : Ending Simulation Finally
+06:25:36.090 : Simulation Time Taken: 0:04:38.101000
+06:25:36.090 : Killing ArduPilot, Gazebo and QGCS
+06:25:36.289 : Merging 20 log types
+06:25:36.398 : Writing 133 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688854865_016244/
+06:25:37.224 : Reseting Handler
+06:25:37.224 : ------------------------------------------------------------
+06:25:37.224 : Loop #23
+06:25:37.224 : # Threads : 2
+06:25:37.224 : Threads : MainThread, sim_ins-22
+06:25:37.225 : Waiting for sim_ins-22 to terminate.
+06:25:38.062 : # Threads : 1
+06:25:38.062 : Threads : MainThread
+06:25:38.062 : Starting QGCS
+06:25:38.070 : Starting Gazebo
+06:25:38.078 : Starting ArduPilot
+06:25:45.103 : Creating Simulation Instance
+06:26:25.681 : Ready to Fly: IMU using GPS
+06:26:25.681 : Start State Logging
+06:26:27.700 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.129375847943113
+06:26:28.715 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.097466115879197
+06:26:28.723 : Sending waypoint: 2 | lat : -35.363768989159524 | lon : 149.16509177023585 | alt : 24.89614867112948
+06:26:43.723 : Finished uploading missions
+06:26:43.723 : Starting Mission
+06:26:43.922 : Start Param Fuzzing
+06:27:23.339 : Reached command #2
+06:27:23.376 : End of mission simulations
+06:27:23.793 : Setting mode to RTL
+06:27:23.827 : Current RTL_ALT : 80604.0
+06:32:57.195 : Disarming motors
+06:33:02.532 : Disarm wait over
+06:33:02.558 : Ending Simulation Finally
+06:33:02.582 : Simulation Time Taken: 0:07:24.494000
+06:33:02.582 : Killing ArduPilot, Gazebo and QGCS
+06:33:02.800 : Merging 20 log types
+06:33:03.103 : Writing 240 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688855145_1055832/
+06:33:04.401 : Reseting Handler
+06:33:04.401 : ------------------------------------------------------------
+06:33:04.401 : Loop #24
+06:33:04.401 : # Threads : 2
+06:33:04.401 : Threads : MainThread, sim_ins-23
+06:33:04.401 : Waiting for sim_ins-23 to terminate.
+06:33:04.561 : # Threads : 1
+06:33:04.561 : Threads : MainThread
+06:33:04.561 : Starting QGCS
+06:33:04.569 : Starting Gazebo
+06:33:04.578 : Starting ArduPilot
+06:33:11.601 : Creating Simulation Instance
+06:33:51.987 : Ready to Fly: IMU using GPS
+06:33:51.987 : Start State Logging
+06:33:53.002 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.862467205310118
+06:33:55.018 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 20.194217350763438
+06:33:55.027 : Sending waypoint: 2 | lat : -35.36401801728755 | lon : 149.16542053414005 | alt : 23.116124072358694
+06:34:10.123 : Finished uploading missions
+06:34:10.123 : Starting Mission
+06:34:10.247 : Start Param Fuzzing
+06:34:53.495 : Reached command #2
+06:34:53.495 : End of mission simulations
+06:34:54.216 : Setting mode to RTL
+06:34:54.216 : Current RTL_ALT : 19929.0
+06:41:09.166 : Disarming motors
+06:41:14.991 : Disarm wait over
+06:41:15.013 : Ending Simulation Finally
+06:41:15.097 : Simulation Time Taken: 0:08:10.511000
+06:41:15.097 : Killing ArduPilot, Gazebo and QGCS
+06:41:15.303 : Merging 20 log types
+06:41:15.660 : Writing 268 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688855591_603975/
+06:41:16.925 : Reseting Handler
+06:41:16.925 : ------------------------------------------------------------
+06:41:16.925 : Loop #25
+06:41:16.925 : # Threads : 2
+06:41:16.925 : Threads : MainThread, sim_ins-24
+06:41:16.925 : Waiting for sim_ins-24 to terminate.
+06:41:17.015 : # Threads : 1
+06:41:17.016 : Threads : MainThread
+06:41:17.016 : Starting QGCS
+06:41:17.025 : Starting Gazebo
+06:41:17.033 : Starting ArduPilot
+06:41:24.057 : Creating Simulation Instance
+06:42:04.441 : Ready to Fly: IMU using GPS
+06:42:04.441 : Start State Logging
+06:42:07.464 : Sending waypoint: 0 | lat : -35.3632622 | lon : 149.1652375 | alt : 24.373908993668515
+06:42:13.494 : Sending waypoint: 1 | lat : -35.3632622 | lon : 149.1652375 | alt : 22.373154274561067
+06:42:14.504 : Sending waypoint: 2 | lat : -35.362554788341534 | lon : 149.16589708558462 | alt : 21.5332507519859
+06:42:29.634 : Finished uploading missions
+06:42:29.635 : Starting Mission
+06:42:29.739 : Start Param Fuzzing
+06:43:15.504 : Reached command #2
+06:43:15.530 : End of mission simulations
+06:43:15.728 : Setting mode to RTL
+06:43:15.766 : Current RTL_ALT : 12664.0
+06:47:30.219 : Disarming motors
+06:47:35.372 : Disarm wait over
+06:47:35.402 : Ending Simulation Finally
+06:47:35.597 : Simulation Time Taken: 0:06:18.556000
+06:47:35.597 : Killing ArduPilot, Gazebo and QGCS
+06:47:35.802 : Merging 20 log types
+06:47:35.996 : Writing 193 records to /home/anon/Documents/dronefuzzingresearch/ardu_logs/A.RTL2/1688845861_1673806/1688856084_060456/
+06:47:37.014 : Reseting Handler
