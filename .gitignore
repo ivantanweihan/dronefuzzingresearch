@@ -1,0 +1,6 @@
+venv/
+px4_logs/
+ardu_logs/
+*.pyc
+src/__pycache__/
+*.log
